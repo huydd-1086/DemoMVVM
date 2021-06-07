@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragmentProduct">
+
+    <fragment
+        android:id="@+id/fragmentProduct"
+        android:name="com.sun.demomvvm.ui.product.ProductFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_product">
+        <action
+            android:id="@+id/actionProductToDetail"
+            app:destination="@+id/fragmentDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFavorite"
+        android:name="com.sun.demomvvm.ui.favorite.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/actionFavoriteToDetail"
+            app:destination="@+id/fragmentDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="com.sun.demomvvm.ui.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="product"
+            app:argType="com.sun.demomvvm.data.model.Product" />
+    </fragment>
+</navigation>

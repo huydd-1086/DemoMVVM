@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DemoMVVM</string>
+    <string name="title_product">Product</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_description">Description</string>
+    <string name="text_add_to_favorite">Add to favorite</string>
+    <string name="text_price">$ %s</string>
+    <string name="text_category">Category: %s</string>
 </resources>

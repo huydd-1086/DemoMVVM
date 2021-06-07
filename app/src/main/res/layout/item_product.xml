@@ -86,7 +86,6 @@
             android:layout_height="0dp"
             android:layout_marginStart="@dimen/dp_16"
             android:layout_marginBottom="@dimen/dp_16"
-            android:backgroundTint="@color/color_zircon"
             app:cardCornerRadius="@dimen/dp_16"
             app:cardElevation="0dp"
             app:layout_constraintDimensionRatio="2:3"
@@ -96,7 +95,7 @@
 
             <ImageView
                 android:id="@+id/imageProduct"
-                image="@{product.image}"
+                app:image="@{product.image}"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@null"
